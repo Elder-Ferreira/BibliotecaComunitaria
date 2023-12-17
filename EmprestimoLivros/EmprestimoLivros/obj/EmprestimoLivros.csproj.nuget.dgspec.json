@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Workspace\\EmprestimoLivros\\EmprestimoLivros\\EmprestimoLivros.csproj": {}
+    "C:\\Workspace\\BibliotecaComunitária\\EmprestimoLivros\\EmprestimoLivros\\EmprestimoLivros.csproj": {}
   },
   "projects": {
-    "C:\\Workspace\\EmprestimoLivros\\EmprestimoLivros\\EmprestimoLivros.csproj": {
+    "C:\\Workspace\\BibliotecaComunitária\\EmprestimoLivros\\EmprestimoLivros\\EmprestimoLivros.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Workspace\\EmprestimoLivros\\EmprestimoLivros\\EmprestimoLivros.csproj",
+        "projectUniqueName": "C:\\Workspace\\BibliotecaComunitária\\EmprestimoLivros\\EmprestimoLivros\\EmprestimoLivros.csproj",
         "projectName": "EmprestimoLivros",
-        "projectPath": "C:\\Workspace\\EmprestimoLivros\\EmprestimoLivros\\EmprestimoLivros.csproj",
+        "projectPath": "C:\\Workspace\\BibliotecaComunitária\\EmprestimoLivros\\EmprestimoLivros\\EmprestimoLivros.csproj",
         "packagesPath": "C:\\Users\\Windows 10\\.nuget\\packages\\",
-        "outputPath": "C:\\Workspace\\EmprestimoLivros\\EmprestimoLivros\\obj\\",
+        "outputPath": "C:\\Workspace\\BibliotecaComunitária\\EmprestimoLivros\\EmprestimoLivros\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -45,6 +45,28 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.25, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.25, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.25, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.25, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
