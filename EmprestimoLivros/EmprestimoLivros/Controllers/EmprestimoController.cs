@@ -25,6 +25,24 @@ namespace EmprestimoLivros.Controllers
             return View(); 
         }
 
+        [HttpGet]
+        public IActionResult Editar(int? id)
+        {
+            if (id == null || id == 0)
+            {
+                return NotFound();
+            }
+
+            EmprestimosModel emprestimo = _db.Emprestimos.FirstOrDefault(x => x.Id == id);
+
+            if(emprestimo == null)
+            {
+                return NotFound(0);
+            }
+
+            return View(emprestimo);
+        }
+
         [HttpPost]
         public IActionResult Cadastrar(EmprestimosModel emprestimos)
         {
@@ -38,6 +56,20 @@ namespace EmprestimoLivros.Controllers
 
             return View();
  
+        }
+
+        [HttpPost]
+        public IActionResult Editar(EmprestimosModel emprestimo)
+        {
+            if (ModelState.IsValid) 
+            {
+                _db.Emprestimos.Update(emprestimo);
+                _db.SaveChanges();
+
+                return RedirectToAction("Index");
+            }
+
+            return View(emprestimo);
         }
     }
 }
